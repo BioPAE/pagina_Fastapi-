@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vida de Ezio Auditore da Firenze - Mentor de la Hermandad">
+    <title>{% block titulo %}Mi Web{% endblock %}</title>
+    
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head> 
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="brand">EZIO</span> <span class="model">AUDITORE</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/" class="active">el mentor</a></li>
+                <li><a href="/secretos">Secretos</a></li>
+                <li><a href="/linaje">Linaje</a></li>
+                <li><a href="/etapas">Etapas</a></li>
+            </ul>
+        </nav>
+    </header>
+<main >
+{% block main %}{% endblock %}
+</main>
+
+    <footer class="main-footer">
+        <p>&copy; 1524 Memoria de Ezio Auditore | Proyecto Animus Profesional</p>
+    </footer>
+
+</body>
+</html>
